@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="331.807" height="324" viewBox="0 0 331.807 324">
-  <defs>
-    <linearGradient id="linear-gradient" x1="-0.011" y1="0.225" x2="1.045" y2="1.074" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#d14c20"/>
-      <stop offset="1" stop-color="#eb9627"/>
-    </linearGradient>
-  </defs>
-  <path id="Vereinigungsmenge_1" data-name="Vereinigungsmenge 1" d="M198.83,324a12.5,12.5,0,0,1-12.5-12.5V272.4H0V0H282.319V183.632h36.988a12.5,12.5,0,0,1,12.5,12.5V324Z" transform="translate(331.807 324) rotate(180)" opacity="0.27" fill="url(#linear-gradient)"/>
-</svg>
