@@ -1,0 +1,21 @@
+############HTACCESS W4Y START############
+Order Allow,Deny
+Allow from all
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTP_HOST} pixelia.at$
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Redirect to add /#/ if not present
+  RewriteCond %{REQUEST_URI} !^/index.html
+  RewriteCond %{REQUEST_URI} !^/assets
+  RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$
+  RewriteCond %{REQUEST_URI} !^/robots.txt
+  RewriteCond %{REQUEST_URI} !^/#/
+  RewriteRule ^(.*)$ /#/$1 [L,R=301]
+</IfModule>
+
+#############HTACCESS W4Y END#############
